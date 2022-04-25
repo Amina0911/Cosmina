@@ -52,8 +52,10 @@ nav.nav {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 400px;
+    width: 500px;
     margin-left: 30px;
+    font-weight: 600;
+    ;
 }
 nav.nav li a{
     color: white;
@@ -212,10 +214,10 @@ nav.nav li a{
 }
 .prix-normal{
     text-decoration: line-through;
-    color: gainsboro;
+    color: black;
 }
 .prix-promo{
-    color: palevioletred;
+    color: red;
     font-weight: 800;
     font-size: 18px;
     line-height: 3px;
@@ -298,6 +300,7 @@ footer a.cgv{
         list-style: none;
         width: 400px;
         margin-left: 30px;
+        font-weight: 700;
     }
     nav.nav li a{
         color: white;
@@ -465,10 +468,10 @@ footer a.cgv{
     }
     .prix-normal{
         text-decoration: line-through;
-        color: gainsboro;
+        color: black;
     }
     .prix-promo{
-        color: palevioletred;
+        color: red;
         font-weight: 800;
         font-size: 18px;
         line-height: 3px;
@@ -513,7 +516,7 @@ header.header img {
 section.top-page{
     background: url('../images/bg.jpg');
     background-size: cover;
-    height: 80vh;
+    height: 70vh;
     
 }
 
@@ -526,7 +529,7 @@ section.top-page{
 
 .big-title {
     color: white;
-    font-size: 47px;
+    font-size: 45px;
     font-family: 'Abril Fatface', cursive;
     font-weight: 100;
     width: 100%;  
@@ -715,10 +718,10 @@ height: 400px;
 }
 .prix-normal{
     text-decoration: line-through;
-    color: gray;
+    color: black;
 }
 .prix-promo{
-    color: palevioletred;
+    color: red;
     font-weight: 800;
     font-size: 18px;
     line-height: 3px;
@@ -730,7 +733,9 @@ display: flex;
 justify-content: space-between;
 align-items: baseline;
 margin: 20px 0px;
-font-weight: 500;
+
+font-weight: 700;
+
 }
 footer a.cgv{
 text-decoration: none;
