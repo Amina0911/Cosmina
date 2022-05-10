@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <title> Cosmina</title>
+</head>
+
+<body>
+    <section id="home" class="home-container">
+        <header id="header" class="header">
+            <img src="image/logo.png" alt="" >
+            <ul class="nav-links">
+                
+                <li>
+                    <a href="#" data-text="Accueil">Accueil</a>
+                </li>
+                <li>
+                    <a href="#best-sales" data-text="Nos meilleures ventes">Nos meilleures ventes</a>
+                </li>
+                <li>
+                    <a href="#plants" data-text="Nos produits">Nos produits</a>
+                </li>
+                <li>
+                    <a href="#soldes" data-text="Soldes">Soldes</a>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+        </header>
+        
+    </section>
+    <section id="delivery" class="delivery-container">
+        <div class="shop">
+            <i class="delivery-icon fas fa-store"></i>
+            <p class="box-content">
+                Nos magasins à votre service
+            </p>
+        </div>
+        <div class="withdrawal">
+            <i class="delivery-icon fas fa-people-carry"></i>
+            <p class="box-content">
+                Retrait en magasin sans contact
+            </p>
+        </div>
+        <div class="delivery">
+            <i class="delivery-icon fas fa-truck"></i>
+            <p class="box-content">
+                Livraison à domicile sans contact
+            </p>
+        </div>
+    </section>
+    <section id="best-sales" class="best-sales-container">
+        <h1 class="section-title">Nos Meilleures ventes</h1>
+        <div class="best-plants">
+            <a href="#" class="plant-box no-grid plant1">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Fard à paupières</h1>
+                    <h3 class="plant-price">5000 FCFA</h3>
+                </div>
+            </a>
+            <a href="#" class="plant-box no-grid plant2">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Poudre libre</h1>
+                    <h3 class="plant-price">8000 FCFA</h3>
+                </div>
+            </a>
+            <a href="#" class="plant-box no-grid plant3">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Mascara</h1>
+                    <h3 class="plant-price">10000 FCFA</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="plants" class="plants-container">
+        <h1 class="section-title">Nos produits</h1>
+        <div class="grid-plants">
+            <a href="#" class="plant-box grid plant-grid1">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Mascara</h1>
+                    <h3 class="plant-price">10000 FCFA</h3>
+                </div>
+            </a>
+            <a href="#" class="plant-box grid plant-grid2">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Fard à paupières</h1>
+                    <h3 class="plant-price">7500 FCFA</h3>
+                </div>
+            </a>
+            <a href="#" class="plant-box grid plant-grid3">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Soin du visage</h1>
+                    <h3 class="plant-price">18000  FCFA</h3>
+                </div>
+            </a>
+            <a href="#" class="plant-box grid plant-grid5">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Concealer "The ordinary"</h1>
+                    <h3 class="plant-price">10000 FCFA</h3>
+                </div>
+            </a>
+            <a href="#" class="plant-box grid plant-grid6">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Rouge à lèvres matte</h1>
+                    <h3 class="plant-price">3000 FCFA</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="soldes" class="soldes">
+        <h1 class="section-title">Soldes</h1>
+        <div class="best-plants">
+            <a href="#" class="plant-box no-grid plant-grid">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Poudre libre</h1>
+                    <h3 class="plant-price"> 
+                        <del>8000 FCFA</del> 6000 FCFA</h3>
+                </div>
+            </a>
+            <a href="#" class="plant-box no-grid plant6">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Pinceaux de maquillage</h1>
+                    <h3 class="plant-price">
+                        <del>10000 FCFA</del> 8000 FCFA</h3>
+                </div>
+            </a>
+            <a href="#" class="plant-box no-grid plant7">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Crème "la roche-posay"</h1>
+                    <h3 class="plant-price">
+                        <del>15000 FCFA</del> 13000 FCFA</h3>
+                </div>
+            </a>
+    
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <span class="copyrights">&copy; 2022 - Cosmina, Cité Soprim, Patte d'oie</span>
+        <a href="#" class="conditions">Contactez-nous au 33 855 50 47</a>
+    </footer>
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>
